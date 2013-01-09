@@ -1,0 +1,33 @@
+input[type=radio],input[type=checkbox]{
+	display:none;
+}
+
+input[type=radio] + label,input[type=checkbox] + label{
+	background:url('../images/ui.png') no-repeat;
+	padding-left:22px;
+	display:block;
+	margin:0.5em 0;
+	min-height:19px;
+	cursor:pointer;
+	overflow:hidden;
+}
+
+input[type=radio] + label{
+	background-position:0 -58px;
+}
+input[type=radio]:checked + label{
+	background-position:0 -39px;
+}
+
+input[type=checkbox] + label{
+	background-position:0 -19px;
+}
+
+input[type=checkbox]:checked + label{
+	background-position:0 0;
+}
+
+input[type=checkbox] + label.inline, input[type=radio] + label.inline{
+	float:left;
+	margin-right:0.5em;
+}
